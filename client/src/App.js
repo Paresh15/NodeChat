@@ -10,16 +10,18 @@ function App() {
   const [username, setUsername] = useState("");
   const [room, setRoom] = useState("");
   const [showChat, setShowChat] = useState(false);
+  const [clname, setclname] = useState("App")
 
   const joinRoom = () => {
     if (username !== "" && room !== "") {
       socket.emit("join_room", room);
       setShowChat(true);
+      setclname("App1")
     }
   };
 
   return (
-    <div className="App">
+    <div className={clname}>
       {!showChat ? (
         <div className="joinChatContainer">
           <h3>NodeChat</h3>

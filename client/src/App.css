@@ -6,6 +6,30 @@
   font-family: "Open Sans", sans-serif;
   display: grid;
   place-items: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    /* url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"); */
+    url("https://media.istockphoto.com/id/1192875652/photo/multiple-question-marks-in-speech-bubbles.webp?b=1&s=170667a&w=0&k=20&c=ffgkMk5a3dX9YmaDakUE_d0AvEonQ5MMS88R9YXBRt4=");
+  background-size: cover;
+}
+
+.App1
+{
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  color: #212121;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
 }
 body {
   margin: 0%;
@@ -17,17 +41,21 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 30%;
+  align-items: center;
+  
 }
 
 .joinChatContainer h3 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #1bb3ea;
 }
 .joinChatContainer input {
   width: 210px;
   height: 40px;
   margin: 7px;
-  border: 2px solid #43a047;
+  border: 2px solid #1bb3ea;
   border-radius: 5px;
   padding: 5px;
   font-size: 16px;
@@ -38,26 +66,32 @@ body {
   height: 50px;
   margin: 7px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 5px;
   font-size: 16px;
-  background: #43a047;
-  color: #fff;
+  background: #1bb3ea;
+  color: #fbfbfb;
   cursor: pointer;
 }
 
 .joinChatContainer button:hover {
-  background: #2e7d32;
+  background: rgb(57, 243, 240);
 }
 
 .chat-window {
-  width: 300px;
+  width: 500px;
   height: 420px;
 }
 
 .chat-window p {
   margin: 0;
 }
+
+.chat-header p
+{
+  text-align: center;
+}
+
 .chat-window .chat-header {
   height: 45px;
   border-radius: 6px;
@@ -101,7 +135,7 @@ body {
   height: auto;
   min-height: 40px;
   max-width: 120px;
-  background-color: #43a047;
+  background-color: #1bb3ea;
   border-radius: 5px;
   color: white;
   display: flex;
@@ -180,11 +214,12 @@ body {
   background: transparent;
   outline: none;
   font-size: 25px;
-  color: lightgray;
+  color: #1bb3ea;
+  background-color: lightgrey;
 }
 
 .chat-window .chat-footer button:hover {
-  color: #43a047;
+  color: #1bb3ea;
 }
 .hide {
   opacity: 0 !important;
